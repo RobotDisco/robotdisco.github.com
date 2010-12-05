@@ -21,4 +21,4 @@ Here is some of my play.
 
 * "PreMeFi":http://thelambdacalculus.github.com/PreMeFi
 
-h4. I "am":/text/public.key The Lambda Calculus.
+h4. I "am":/text/public_key.txt The Lambda Calculus.
