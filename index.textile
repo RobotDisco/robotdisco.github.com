@@ -1,0 +1,24 @@
+---
+layout: default
+title: P = NP Softworks
+---
+
+h2. P = NP Softworks
+
+h4. Expressing Human Contempt through Software Development, Inc.
+
+This life was forged in Java and C++. It was a birthright and an expectation.
+
+Learning soft skills, spending thousands of dollars to check off bullet points on a resume ... compromises were made and the joy of code was stifled.
+
+But the fruit was affluence and leisure. There is now affordable time to re-examine the assumptions of what it means to live computer science.
+
+That P is not NP, that the solution for a large number of significant and civilization-defining tasks cannot be bounded by polynomial time, it is as essential to society as the wealth of nations.
+
+To claim this is not so -- without weight and without justification -- is civil protest. It is also mischievous, playful discordianism, a '68 spirit.
+
+Here is some of my play.
+
+* "PreMeFi":http://thelambdacalculus.github.com/PreMeFi
+
+h4. I "am":/text/public.key The Lambda Calculus.
