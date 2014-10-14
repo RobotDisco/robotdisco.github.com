@@ -1,0 +1,12 @@
+# Site settings
+title: n a l e a g d e c o d o t n e t
+email: gdcosta@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Gaelan D'costa's website
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://naleagdeco.github.io" # the base hostname & protocol for your site
+twitter_username: MentatMode
+github_username:  NaleagDeco
+
+# Build settings
+markdown: kramdown
