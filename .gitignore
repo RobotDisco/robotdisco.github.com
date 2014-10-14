@@ -1,1 +1,8 @@
+# Jekyll
 _site
+.sass-cache
+
+# Bundler quirks
+/vendor/
+/bin/
+/.bundle/
