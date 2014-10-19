@@ -7,7 +7,7 @@ categories: common-lisp
 I apologize for writing a post that's most likely superfluous, but if I have Common Lisp on my brain I probably should talk about how I got started, in case it's useful.
 
 ### Motivations
-I suppose first, _why_ am I so into Common Lisp. That's probably a series of posts for when I am more articulate about programming, but there is something incredibly powerful about a language that is so powerful despite having such a simple syntax. Common Lisp is homoiconic, the code you read directly represents the structure of the language [^1]. At it's simplest level, LISP [^2] consists of lists and atoms (which can be numbers, strings, symbols, 'true and NIL.) When you write LISP programs, in a certain way all you are writing are lists which are evaluated according to some simple rules.
+I suppose first, _why_ am I so into Common Lisp. That's probably a series of posts for when I am more articulate about programming, but there is something incredibly powerful about a language that is so powerful despite having such a simple syntax. Common Lisp is homoiconic, the code you read directly represents the structure of the language[^1]. At it's simplest level, LISP[^2] consists of lists and atoms (which can be numbers, strings, symbols, 'true and NIL.) When you write LISP programs, in a certain way all you are writing are lists which are evaluated according to some simple rules.
 
 For example, when you say `(functionname 1 2 3)` the interpreter/compiler looks up the code corresponding to the first element in the list and applies it to the following elements as arguments.
 
@@ -25,12 +25,12 @@ What about languages like Racket and Clojure? I think they're pretty cool too, a
 
 The go-to standard for learning Common Lisp is probably Peter Siebel's [Practical Common Lisp][pcl], which is fortunately free. While it is available in dead-tree format, I found its online presentation a little difficult to follow because of the sheer amount of text. It is definitely worth reading, and is probably the most comprehensive introduction to learning Common Lisp.
 
-The book that best helped me grok Common Lisp is the absolutely wonderful and quirky [Land of Lisp][lol], which is worth every penny. Conrad Barski put a lot of work into writing a work which is entertaining and easy to learn from. He uses game programming to teach you both Lisp programming and enough functional programming concepts to orient you around Lisp's thought process. Even if you don't intend on learning Common Lisp itself, [Land of Lisp][lol] is simply wonderful literature alongside a great programming language introduction.
+The book that best helped me grok Common Lisp is the absolutely wonderful and quirky [Land of Lisp][lolb], which is worth every penny. Conrad Barski put a lot of work into writing a work which is entertaining and easy to learn from. He uses game programming to teach you both Lisp programming and enough functional programming concepts to orient you around Lisp's thought process. Even if you don't intend on learning Common Lisp itself, [Land of Lisp][lolb] is simply wonderful literature alongside a great programming language introduction.
 
 While not a starting point, the definitive online reference of Common Lisp's standard is hosted by LispWorks as the [HyperSpec][lwh]. Paul Graham wrote a more readable reference called [ANSI Common LISP][acl] if dry technical references aren't your style.
 
 There are plenty of other books I'd recommend in the future (Doug Hoyte's [Let over Lambda][lolh], Paul Graham's [On Lisp][pgol]), but for now stick with the above ones.
-If you're interested in how Lisps are implemented -- implementation details aren't essential but you can sometimes glean insights into programming language concepts -- I would recommend [Build Your Own Lisp] [^3] and eventually Christian Quinnec's [Lisp in Small Pieces][lisp]
+If you're interested in how Lisps are implemented -- implementation details aren't essential but you can sometimes glean insights into programming language concepts -- I would recommend [Build Your Own Lisp][byol][^3] and eventually Christian Quinnec's [Lisp in Small Pieces][lisp]
 
 ### Recommended Implementations
 
@@ -42,7 +42,7 @@ There are two extant commercial implementations of Common Lisp: [LispWorks][lw] 
 
 ### Editors and Tools
 
-If you go the open source route [^5], the path of least resistance is to use a combination of [Emacs][emacs] (the editor) and [SLIME][slime] (the Superior Lisp Interaction Mode for Emacs). I don't think I'll get into what a REPL is just now, but Lisp's interpreted nature allows for a really well-tuned mechanism for easily evaluating Lisp code in Emacs, code completion, and debugging.
+If you go the open source route[^5], the path of least resistance is to use a combination of [Emacs][emacs] (the editor) and [SLIME][slime] (the Superior Lisp Interaction Mode for Emacs). I don't think I'll get into what a REPL is just now, but Lisp's interpreted nature allows for a really well-tuned mechanism for easily evaluating Lisp code in Emacs, code completion, and debugging.
 
 If you aren't into Emacs, I don't blame you. While there are tools for Vim, Eclipse and Sublime Text], I don't know anything about them and I wouldn't recommend anything that's simply a way to use the command-line REPLs in your editor window.
 
