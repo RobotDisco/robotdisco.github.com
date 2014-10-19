@@ -48,7 +48,7 @@ If you aren't into Emacs, I don't blame you. While there are tools for Vim, Ecli
 
 I've tried the [LispWorks][lw] and [Allegro][facl] editors and they're not bad! I prefer Emacs, though.
 
-Regardless of which of these you choose, you will probably want to start out by reading my last post and installing the [QuickLisp][ql] dependency management at the very least. QuickLisp is the easiest way to install SLIME, if you choose to go that route.
+Regardless of which of these you choose, you will probably want to start out by reading my last [post]({% post_url 2014-10-14-common-lisp-with-tdd-skeleton-organization %}) and installing the [QuickLisp][ql] dependency management at the very least. QuickLisp is the easiest way to install SLIME, if you choose to go that route.
 
 ### Have fun!
 
