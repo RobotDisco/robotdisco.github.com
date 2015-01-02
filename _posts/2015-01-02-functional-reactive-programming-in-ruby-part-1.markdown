@@ -6,7 +6,7 @@ categories: frp ruby
 
 A few months ago I decided to write a [Roguelike](http://en.wikipedia.org/wiki/Roguelike). As someone who has professionally developed Operating Systems and has an enthusiastic fascination for such 80s monstrosities as Common Lisp and Emacs.
 
-![My (first) Roguelike]({{ site.baseurl }}/assets/img/ykwya_1.png)
+<img alt="My (first) Roguelike" width="700px" src="{{ site.baseurl }}/assets/img/ykwya_1.png" />
 
 ### Ruby! 
 I ended up choosing Ruby because it’s a language I’d love to work with professionally, I find it incredibly powerful and expressive and easy to understand (which I realize isn’t everyone’s experience, and I’ve definitely seen some pretty wide-spread bad practices.)
