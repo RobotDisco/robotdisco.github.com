@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Functional Reactive Programming in Ruby (Part 1)
-categories: frp ruby
+categories: frp ruby roguelikes
 ---
 
 A few months ago I decided to write a [Roguelike](http://en.wikipedia.org/wiki/Roguelike). As someone who has professionally developed Operating Systems and has an enthusiastic fascination for such 80s monstrosities as Common Lisp and Emacs.

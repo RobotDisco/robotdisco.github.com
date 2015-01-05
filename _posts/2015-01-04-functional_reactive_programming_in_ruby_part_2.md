@@ -2,7 +2,7 @@
 title: Functional Reactive Programming in Ruby (Part 2)
 layout: post
 date: 2015-01-04 20:29
-
+categories: frp ruby roguelikes
 ---
 
 ### Last Time
