@@ -1,7 +1,8 @@
 ---
 title: Functional Reactive Programming in Ruby (Part 3)
 layout: post
-date: 2015-01-04
+date: 2015-01-04 22:16
+
 ---
 
 ### Last time(s)
@@ -14,15 +15,15 @@ Anyway, let’s get to it <3
 ### Creating the world Functionally
 Before we even think about input and output, let’s think the functional programming. I wanted to have monsters, potions, gold, a player, and some terrain. I also want a status message to be displayed to the player. You’ll want to look at the code for the full story, but here’s the crux of my code for creating a new game.
 
-{% highlight ruby linenos %}
-def self.create_game(player)
+{% highlight ruby %}
+def create_game(player)
 
   terrain = build_dungeon
   unplaced_monsters = build_monsters
   unplaced_potions = build_potions
   unplaced_gold = build_gold
   
-	# Shuffle to enable random placement
+  # Shuffle to enable random placement
   empty_terrain = terrain.select { |coords, tile| tile.is_a? YKWYA::Empty }.keys.shuffle
 
   {
@@ -36,9 +37,7 @@ def self.create_game(player)
     status: 'Welcome to YKWYA!'
   }
 end
-{% endhighlight %}[^1]
-
-[^1]: This isn’t my usual ruby style, but it seemed easiest to read.
+{% endhighlight %}
 
 Doesn’t it look really weird? (It probably looks even weirder if you’re comfortable in Ruby. Because I’m trying to minimize the amount of state changes I make, I’m not writing idiomatic Ruby. In many ways, my code reminds me of Scala, which attempts to put a functional-friendly syntax on top of Java but is basically just Java.
 
@@ -53,12 +52,14 @@ It’s actually kind of handy, because that `.clone` is important:  Since Ruby d
 
 ### Modifying the world functionally
 Ultimately, every turn of my simple roguelike consists of two steps:
+
 1. The player performs an act (gets potion or gold, attacks a player, moves, or doesn’t move)
 2. All monsters act (move around or attack.)
 
 Like all complex software, this won’t necessarily be super easy. You’ll wind up having to juggle a bunch of different pieces of data that depend on each other, but the nice thing is that all of this data is collected into one object that you can pass around from function to function.
 
 I’ve found that it’s a lot easier if you break all of your operations into little chunks:
+
 * Does the player move or attack
 * What happens when the player picks up an item / attacks a monster
 * Did the world change (a door opened, a trap activated)

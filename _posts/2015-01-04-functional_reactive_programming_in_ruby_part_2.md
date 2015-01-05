@@ -1,7 +1,8 @@
 ---
 title: Functional Reactive Programming in Ruby (Part 2)
 layout: post
-date: 2015-01-04
+date: 2015-01-04 20:29
+
 ---
 
 ### Last Time
@@ -15,7 +16,6 @@ Most GUI frameworks use things like callbacks to handle events … you will set 
 FRP is a way to handle the fact that program input probably affects the entire program end-to-end but you don’t want to have to share data in a way where one component changes things around for everybody else.
 
 ### Functional Reactive Programming
-
 The way Functional and Reactive programming combine is through the concept of **events** and **behaviours**[^1]
 
 [^1]: Sometimes frameworks combine the two together into a single concept, signals. I don’t know enough to know what the ramifications and advantages and disadvantages of this reframing is.
@@ -25,7 +25,6 @@ The way Functional and Reactive programming combine is through the concept of **
 **Events** are a way to handle things like clicks or keypresses which aren’t continuous but behave similarly to the above signal functions. If a program is running, and I need to mouse click, I can have a function that returns ‘false’ for all times when nobody was clicking, and returns ‘true’ for all times when the user was clicking.
 
 #### Why is this useful?
-
 Doesn’t it seem like a lot of work and weirdness to be caring about the times in which anything happens? Doesn’t it seem like your program could take so much time updating all of these values and not doing anything useful.
 Well, the nice thing about the reactive pattern is that it’s inherently lazy … even if the signals are changing all the time, you only care about their values at the moments in which you need them.
 
@@ -35,7 +34,7 @@ That being said, if you *did* track the values at every feasible instant, you’
 The really neat things about these signals is that a lot of the basic functional programming operations can be made to work on these signal. in FRP, these operations[^2] will return streams that are modifications (often supersets or subsets of the original signal).
 If the system provides you with a signal that informs you of every keyboard press in the program, you could have a signal that *filters* out any keypress that isn’t the few you are interested in. You could *merge* two signals together so that you get their combined values (and perhaps then produce an even more complicated filter)
 
-[^2]: I’m not going to discuss these basic operations, if I wanted to be responsible comprehensive I totally would though. Here’s a **link** in case you’re interested
+[^2]: I’m not going to discuss these basic operations, if I wanted to be responsibly comprehensive I totally would though. Here’s a [link](http://learnyouahaskell.com/higher-order-functions) in case you’re interested
 
 You could have a *map* function that always applies a function to a signal’s value and returns the derived value.
 
