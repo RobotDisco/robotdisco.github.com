@@ -69,7 +69,7 @@ And I’m going to do that by being as honest about my opinion of my life as pos
 
 Let me summarize the above into a TL;DR
 
-* I’m not happy, and I think being needing to feel happy is bullshit. (I don’t want to stop you from feeling so! But I don’t think people should be obligated to?)
+* I’m not happy, and I think feeling a social need to feel happy is bullshit. (I don’t want to stop you from feeling happy, or from wanting to feeling happy! But I don’t think people should be obligated to?)
 * There is enough anger and bad privileged-behaviour in this world, and since I don’t know of a working alternative I’m going to make something up. Here’s to being meek and weak, so far it’s been kinder than the alternative.
 * I think people as a whole could do with being less happy. I think people as a whole could do with being less comfortable. I think people as a whole could do with being more alienated with themselves. Or at the very least, I feel people should feel empowered and ennobled to express their discomforts about themselves.
 
