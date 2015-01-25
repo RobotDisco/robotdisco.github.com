@@ -11,6 +11,8 @@ Abstract
 --------
 "I hate being an immigrant, I hate having depression, I hate being a inemotional socially progressive person, but I live comfortably with it and have no reason to hide it. If I can embed it into everything I say, maybe I can contribute to making the world a better place."
 
+---
+
 State of the Robot
 ------------------
 
@@ -18,8 +20,8 @@ As you are pleasantly or non-pleasantly or non-caringly aware, I tweet a lot of 
 
 There’s an old saying I’m pretty sure I didn’t make up, that “Nobody is as happy as they seem on Facebook, as outraged as they seem on Twitter, or as competent as they seem on LinkedIn”. In many ways, possibly through self-selection and possibly because most people who are similar to me who aren’t me are wise enough to know better, this is why I occasionally get one of the two assessments shot my way
 
-a. "You really stand out on facebook, because it sounds like your life is falling apart." (Nobody ever says this straight out, I almost always infer it or am relayed it via people in category b, but your concern is much appreciated, and in many ways you aren’t wrong even if you aren’t right)
-b. "You really stand out on facebook, because I’m so glad you say the things I don’t want anyone knowing I’m thinking."
+1. "You really stand out on facebook, because it sounds like your life is falling apart." (Nobody ever says this straight out, I almost always infer it or am relayed it via people in category 2, but your concern is much appreciated, and in many ways you aren’t wrong even if you aren’t right)
+2. "You really stand out on facebook, because I’m so glad you say the things I don’t want anyone knowing I’m thinking."
 
 Let me tell you when I first discovered twitter. I signed up and basically did nothing with it for at least three/four years. Because one of my current room-mates invited me to a hackathon in a gaming co-op space, I followed a couple game designers because I liked their games. And then it turns out they were trans. And it turns out they had really interesting things to say about identity politics. It turns out a lot of people who are completely fucked over by crystallized outdated identity assignments have some really interesting creativity and ambivalences towards fixed identities in general. One of them in particular publicly performed with a gender of dolphin.
 Someone declared their gender as dolphin. And they ran with it. Not as performance, not as an art piece, but as some dumbass shit they posted while taking selfies and playing video games and talking about their lunches and dates.
@@ -45,7 +47,7 @@ But you know, I will never change the secret rules of this world, the ones I am 
 
 If you’re not depressed or an immigrant. I don’t expect people to grok this. Don’t even bother, these are my secret rules that you have no part in. Even as an immigrant or as someone who is depressed, I have to assume our experiences are different enough that I can only get perhaps an abstract sense. I can feel a limited kinship, but these are often the kinds of things we must face independently.
 
-But not alone. Those people in category b) … they friend me out of nowhere. They sit beside me having only seen me at social events. They read my twitter or Facebook and they flash me a secret understanding. “I know what you’re talking about. I’m glad you’re saying it.”
+But not alone. Those people in category 2 … they friend me out of nowhere. They sit beside me having only seen me at social events. They read my twitter or Facebook and they flash me a secret understanding. “I know what you’re talking about. I’m glad you’re saying it.”
 
 I don’t like talking about my good qualities. That’s goes against my Catholic brainwashing. So does talking about my struggles. If I don’t eat my life when there are children starving in Africa. Or women dealing with the glass ceiling. Or indigenous people and/or black people who I will rarely, if ever, see as a peer in my cushy professional class. Intersectionality has been a pretty great replacement for catholicism. Privilege is a pretty good replacement for original sin.
 If I believed in anything, I would be so thankful to it/them that the only oppressions I face are ones my own brain creates, and that I struggle in society because of its ambivalence, not its bigoted hostility. I’m so safe in this world, except from myself.
