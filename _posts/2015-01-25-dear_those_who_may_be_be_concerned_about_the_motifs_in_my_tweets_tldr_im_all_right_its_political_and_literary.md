@@ -1,5 +1,5 @@
 ---
-title: Dear those who may be be concerned about the motifs in my tweets (TLDR: I'm all right, it's political and literary)
+title: Dear those who may be be concerned about the motifs in my tweets (I'm all right, it's political and literary)
 layout: post
 categories: personal
 tags: depression immigrant social-justice
