@@ -12,7 +12,7 @@ I have a housemate who is fluent in Haskell. Every day I would come home and ask
 
 --
 
-I recently slammed enough of my head against a Clojurescript hobby project that I got an MVP written against. At work I regularly work in PHP and Javascript. That month was filled with a lot of silly type errors, and I decided it was time I wrote a project in Haskell once and for all[^2]
+I recently slammed enough of my head against a Clojurescript hobby project that I got an minimum viable product in terms of functionality. At work I regularly work in PHP and Javascript. That month was filled with a lot of silly type errors (all of these languages are dynamically typed and don't check for variable type consistency until runtime) and I decided it was time I wrote a project in Haskell once and for all[^2]
 
 --
 
