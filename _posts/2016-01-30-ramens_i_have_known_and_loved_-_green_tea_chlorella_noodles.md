@@ -2,7 +2,7 @@
 title: Ramens I Have Known and Loved - Green Tea Chlorella noodles
 layout: post
 date: 2016-01-30 14:29
-
+tags: ramen food
 ---
 
 Background
