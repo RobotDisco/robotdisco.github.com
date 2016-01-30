@@ -14,7 +14,8 @@ Since food bores me easily, I went to the local "asian food superstore" and boug
 
 Today I'm going to talk about one of them.
 
-=== Paldo - Green tea Chlorella Noodles
+Paldo - Green tea Chlorella Noodles
+====
 
 ![Unopened package](/assets/img/ramen/greensoup1.jpg)
 
