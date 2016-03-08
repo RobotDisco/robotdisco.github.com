@@ -28,7 +28,8 @@ Always remember
 1. If someone has made you socially anxious, it makes sense why you're here. You have had much to be legitimately socially anxious about. It only makes sense that social issues are the things that hurt you most. Now is not the time to deal with them. When you're ready to get back into the game, that's when you're ready to deal with whatever hurt you.
 1. Put away Twitter and Facebook. Put away chat groups. Find the least involving pleasure-generator you can think of, a book, a game, a show ... and put it away if it stops inducing pleasure. What you need today is chicken soup.
 1. Remember that before you were 30 you lived entire lives like this. Until last year you could spend weeks like this, and they happened every month or so. Nowadays they are somewhat rare and, if rested, can go away as early as overnight! That's huge process! That's the opposite of whatever failure you are convincing yourself you are :)
-1. 90s RPGs seem to cheer you up. Play them
+1. 90s RPGs seem to cheer you up. Play them.
+1. Anime always makes you feel things and you are bad at feeling things. Consider avoiding them.
 1. Your cats are there for you. Shove your face into their fur.
 1. You keep thinking that you're too anxious to be around friends, but every time you've forced yourself into it, you've shortened your depression by hours or days.
 1. Drink water when you wake up. You'll wake up earlier. You'll get up easier if that's what you want to do. You'll feel there is more day to play with.
