@@ -40,7 +40,7 @@ I also notice that most higher-end servers have multiple network cards, one card
 Installing SmartOS the not-smart way, manually!
 ===
 
-Anyway, if you are like me and want to undertake a fool's errand, I will say that the manual install isn't too bad and was very educational for me since I don't know much about SmartOS, ZFS, the Solaris-based administration commands, or anything like that. Boring over the SmartOS boot scripts was a great way of figuring out where everything lived and why it's important!
+Anyway, if you are like me and want to undertake a fool's errand, I will say that the manual install isn't too bad and was very educational for me since I don't know much about SmartOS, ZFS, the Solaris-based administration commands, or anything like that. Poring over the SmartOS boot scripts was a great way of figuring out where everything lived and why it's important!
 
 I don't think trying to regurgitate my notes is really useful, since I imagine these scripts could change at any given time. But I will provide some pointers!
 
