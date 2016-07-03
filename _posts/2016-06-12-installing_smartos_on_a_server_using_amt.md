@@ -3,7 +3,7 @@ title: SmartOS will hang if you try to install it using Intel AMT's remote deskt
 layout: post
 date: 2016-06-12 15:11 EDT
 
-tags: smartos, intel amt, server administration
+tags: smartos intel-amt sysadmin
 ---
 
 This is primarily a note for anyone who, like me, was hoping to install SmartOS on a server using nothing but Intel's AMT technology.
