@@ -25,6 +25,8 @@ As a developer I also now feel I have the capability to add what I need to a pla
 One of my current coworkers who most inspires me really pushed the benefits of shell scripts and aliases, saying that ideally every person's computers would be configured to fit its own exactly. I would like to see how far I could go with their mentality.
 
 ## How (overview)
+**[ETA: BTW I've started a working glossary [primer](/email/2016/12/04/what_little_i_know_of_email_systems.html) on what I think I know about email systems. It may or may not be correct]**
+
 Right now my mail is hosted in Google Mail. This makes it slightly different from the IMAP-based systems that are the standard way for mail to be hosted and handled nowadays, but it is compatible with IMAP and there are ways to work with it. I would like to keep and work with the labels and filters I already use, and we'll see if I move things locally as I get more comfortable. If you want to sync mail from Gmail, you will have to enable IMAP support.[^3]
 
 I do not know if ultimately I want to download all of my mail locally, but it will come in handy should I choose to transfer all my mail to a different mail system.
