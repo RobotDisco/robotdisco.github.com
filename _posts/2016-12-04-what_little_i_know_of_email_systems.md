@@ -10,9 +10,9 @@ As someone who has spent much of his life using Gmail or Thunderbord or some oth
 
 So I am going to try listing off terminology as best I understand to form a working glossary. I'm probably wrong. Here goes.
 
-*. **SMTP - Simple Mail Transfer Protocol** - The protocol for _sending_ mail to other people
-*. **POP3 - Post-Office Protocol version 3** - A protocol for _fetching_ mail from a server. The idea is it only holds new mail, you download it and probably wipe it from the server. It doesn't have any sense of organization of structure.
-*. **IMAP4 - Internet Mailbox Access Protocol** - Another protocol for reading stored mail on a server. Unlike POP3 it can be used to keep mail stored on a remote server, and it supports hierarchies like folders and subfolders
+* **SMTP - Simple Mail Transfer Protocol** - The protocol for _sending_ mail to other people
+* **POP3 - Post-Office Protocol version 3** - A protocol for _fetching_ mail from a server. The idea is it only holds new mail, you download it and probably wipe it from the server. It doesn't have any sense of organization of structure.
+* **IMAP4 - Internet Mailbox Access Protocol** - Another protocol for reading stored mail on a server. Unlike POP3 it can be used to keep mail stored on a remote server, and it supports hierarchies like folders and subfolders
 
 In a modern world where we tend to think of mail servers as being like ... Gmail or your office mail system and your computer (or phone or web browser) as having a mail client like Outlook or Thunderbird, you might think that there are just two things, mail servers and mail clients.
 
@@ -28,7 +28,7 @@ As you can imagine, something complex like Outlook or Thunderbird winds up being
 
 #### How is mail stored on a filesystem?
 
-If you think about unix-based[^Windows or other OSes might do something very different, for all I know Microsoft Exchange stores everything in a database] systems, it's probably going to be stored as a bunch of files in a directory you are allowed to access (or maybe not ... maybe you are forced to access everything via IMAP) Way back when you either logged into a remote server to read your mail, or you fetched it ... modern systems have sort of blurred the line, and webmail has basically destroyed the line completely.
+If you think about unix-based[^1] systems, it's probably going to be stored as a bunch of files in a directory you are allowed to access (or maybe not ... maybe you are forced to access everything via IMAP) Way back when you either logged into a remote server to read your mail, or you fetched it ... modern systems have sort of blurred the line, and webmail has basically destroyed the line completely.
 
 At the very least if you're using a computer at home, your mail app has to store all your mail somehow. Again, proprietary and complex pieces of software like Thunderbird or Outlook might use a private database, but the standard forms are one of the following:
 
@@ -38,10 +38,12 @@ At the very least if you're using a computer at home, your mail app has to store
 There are other options, but they are far less common. The above two are the de-factor standards. Thunderbird I believe actually uses mbox internally.
 
 #### What about gmail?
-Gmail can pretend to be an IMAP or POP server and work with those technologies' limitations, but it tweaks things a little bit. Obviously it's proprietary so I have no idea what goes on behind the scenes. But unlike IMAP which assumes a typical filesystem interface (folders containing messages, so a message can only be in one folder), gmail treats everything like labels so that you can have multiple labels on any mail. *ALL** mail has the 'All Mail' label attached, because Gmail is built around the idea that everything is in one giant indexable/searchable bucket.
+Gmail can pretend to be an IMAP or POP server and work with those technologies' limitations, but it tweaks things a little bit. Obviously it's proprietary so I have no idea what goes on behind the scenes. But unlike IMAP which assumes a typical filesystem interface (folders containing messages, so a message can only be in one folder), gmail treats everything like labels so that you can have multiple labels on any mail. **ALL** mail has the 'All Mail' label attached, because Gmail is built around the idea that everything is in one giant indexable/searchable bucket.
 Gmail also does some magic to intercept all mail you send and stick the 'Sent Mail' label on it; because sending mail is a different process than storing/retrieving it, this does not happen by default on standard SMTP/IMAP combinations. (Back when Gmail was the only service with "unlimited" email, this was a game-changer; most systems didn't expect you to save all of your email because disk space was finite)
 
 #### Spam filtering?
 Email is a notoriously insecure process, one of the easiest ways to get hacked or become a conduit for nasties spreading viruses and spam is to try to run your own mail-server. Email, one of the earliest mechanisms on the internet, was very trusting and assumed that everyone had good intentions. It is only relatively recently that email systems have had a wealth of tooling (spam filters, virus scanners, policies for not forwarding emails on behalf of people who aren't confirmed users of your service, certificates that you are in fact a "legitimate" mail server) that I don't really want to get into because I don't understand it at all.
 
 Anyway, if you want to get into the magical world of pretending it is the 80s/90s and running all of your email on a unix system, hopefully I've made things slightly less confusing.
+
+[^1]: Windows or other OSes might do something very different, for all I know Microsoft Exchange stores everything in a database] 
