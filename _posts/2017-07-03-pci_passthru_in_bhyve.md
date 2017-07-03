@@ -33,40 +33,18 @@ Glossary
 How to set up device passthru in bhyve/iohyve.
 =
 
-
-Type `pciconf -lv`.
-
-This will print a list of all PCI devices in your system. Find the device you want.
-
-It'll look something like `em0@pci:10:0:0:    class=0x2000` ... in this case em0 indicates an Ethernet device.
-
-If you knew you were looking for `em0` to being with, typing `pciconf -lv | grem em0` would have been more convenient.
-
 **MEGA-NOTE:** If you have multiple devices like em0, em1, em2, and you make one a pass-through device (say em1), it will REORDER THE SUBSEQUENT DEVICES because the original em1 would have been taken out of the list of registered emX devices. Be warned, if you already have multiple devices of the same family set up.
 
-
-Edit `/boot/loader.conf` to specify the PCI device that is being assigned as a passthru. Note that this only takes effect on a system start.
-
-Your file should include a line like `pptdevs="10/0/0"`. Note how the number truplet mirrors what you saw above in em0@pci:**10:0:0:**.
-
-You can totally pass through multiple devices, just add them in a space-separated list like `pptdevs=10/0/0 10/0/1 11/0/1"` etc....
-
-**MINI-NOTE:** Some addon cards have multiple devices, which would show up as like two triplets, 9/0/0 and 9/0/1 or whatever. An example of this would be a network card with two or four thernet ports. Some devices are unhappy if you only pass through a subset of triplets ... I don't really understand it.
-
-Let's create the pfSense (or whatever) virtual image you want to pass the device into....
-
-`iohyve create pfsense 8G` (Create a VM with 8G hard drive space)
-
-
-Let's assign the passthru device.
-
-`iphyve set pfsense pcidev:7=passthru,10/0/0` (attach the passthru pci device. Note that it uses the triplets mentioned above. The triplets had to be mentioned in the loader.conf above. The **7** in `pcidev:7` is arbitrary and I don't know if there any any rules about what numbers you can and cannot use.
-
-
-Enabling passthru devices in bhyve requires setting some startup flags...
+1. Type `pciconf -lv`. (This will print a list of all PCI devices in your system. Find the device you want. It'll look something like `em0@pci:10:0:0:    class=0x2000` ... in this case em0 indicates an Ethernet device. If you knew you were looking for `em0` to being with, typing `pciconf -lv | grem em0` would have been more convenient.)
+2. Edit `/boot/loader.conf` to specify the PCI device that is being assigned as a passthru. Note that this only takes effect on a system start.
+  * Your file should include a line like `pptdevs="10/0/0"`. Note how the number triplet mirrors what you saw above in em0@pci:**10:0:0:**.
+  * You can totally pass through multiple devices, just add them in a space-separated list like `pptdevs=10/0/0 10/0/1 11/0/1"` etc....
+  * **MINI-NOTE:** Some addon cards have multiple devices, which would show up as like two triplets, 9/0/0 and 9/0/1 or whatever. An example of this would be a network card with two or four thernet ports. Some devices are unhappy if you only pass through a subset of triplets ... I don't really understand it.
+3. `iohyve create pfsense 8G` (Create a VM with 8G hard drive space. It can be named whatever, `pfsense` is just an example.)
+4. `iphyve set pfsense pcidev:7=passthru,10/0/0` (attach the passthru pci device.)
+  * Note that it uses the triplets mentioned above. The triplets had to be mentioned in the loader.conf above. The **7** in `pcidev:7` is arbitrary and I don't know if there any any rules about what numbers you can and cannot use. You can assign many different pci passthru devices.
+5. Enabling passthru devices in bhyve requires setting some startup flags...
 `iohyve set pfsense bargs="-S_-A_-H_-P"`
-
-The -S_ was added to the default `-A_-H_-P`. I think it stands for "wire guest memory", which means soemthing according to this [page](https://wiki.freebsd.org/bhyve/pci_passthru) that I don't really understand. You can remove it if you stop using PCI device passthru. Not setting it will make VMs with PCI passthru devices fail to start.
-
+    * The -S_ was added to the default `-A_-H_-P`. I think it stands for "wire guest memory", which means soemthing according to this [page](https://wiki.freebsd.org/bhyve/pci_passthru) that I don't really understand. You can remove it if you stop using PCI device passthru. Not setting it will make VMs with PCI passthru devices fail to start.
 
 With this, you should see the device inside your virtual machine as if it was really attached to it. The host system no longer has the ability to use that device.
