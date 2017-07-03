@@ -16,12 +16,18 @@ Glossary
 *warning: these are not incredibly accurate*
 
 **pfSense:** a firewall/router project built off FreeBSD. A linux alternative would be dd-wrt.
+
 **FreeBSD:** an open source unix clone with a different design philosophy than the more commonly-known Linux.</dd>
-**Bhyve/Iohyve:** Virtualization software native to FreeBSD. This is similar to KVM on Linux.</ddr>
-**Firewall:** A software or hardware application that filters all network traffic coming it to keep malicious traffic out allow good traffic through.</dd>
-**Network bridge:** A device that lets traffic pass through it unadultered. Useful for passing ethernet traffic from one physical media to another.</dd>
-**Network Router and/or Network Gateway:** A device that sits as a single point separating an outside network from an "inside"/"private" network. There is a real difference between the two terms but I don't know what it is.</dd>
-**Network Switch:** A switch is a device that, uh, basically is like multiple bridges where traffic from any port can be sent to any other port. I don't want to explain how it does this, so let's just say it's magic because the way switches work are actually hella interesting and fascinating. If you're a keener, contrast ethernet switches against ethernet hubs.</dd>
+
+**Bhyve/Iohyve:** Virtualization software native to FreeBSD. This is similar to KVM on Linux.
+
+**Firewall:** A software or hardware application that filters all network traffic coming it to keep malicious traffic out allow good traffic through.
+
+**Network bridge:** A device that lets traffic pass through it unadultered. Useful for passing ethernet traffic from one physical media to another.
+
+**Network Router and/or Network Gateway:** A device that sits as a single point separating an outside network from an "inside"/"private" network. There is a real difference between the two terms but I don't know what it is.
+
+**Network Switch:** A switch is a device that, uh, basically is like multiple bridges where traffic from any port can be sent to any other port. I don't want to explain how it does this, so let's just say it's magic because the way switches work are actually hella interesting and fascinating. If you're a keener, contrast ethernet switches against ethernet hubs.
 
 Approach
 -
