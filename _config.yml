@@ -5,3 +5,4 @@ lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock, vendor]
 kramdown:
   input: GFM
+timezone: America/Toronto
