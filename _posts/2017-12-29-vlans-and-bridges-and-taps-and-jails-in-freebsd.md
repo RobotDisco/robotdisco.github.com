@@ -1,7 +1,7 @@
 ---
 title: VLANs and Bridges and Taps and Jails in FreeBSD
 layout: post
-date: 2017-12-29 22:01 EDT
+date: 2017-12-30 22:01 EDT
 
 ---
 
