@@ -53,3 +53,15 @@ Lastly, here's a few capsule summaries of:
 2. A `vlan20` and `vlan50`, tapping off `em0`, creating untagged segments for my home and internet services (web-apps, etc...)
 3. A bridge `bridge20` containing `vlan20` and whatever jail and VM interfaces needed to be on VLAN segment 20.
 4. A bridge `bridge50` containing `vlan50` and whatever jail and VM interfaces needed to be on VLAN segment 50.
+
+#### Half-assed glossary:
+
+**Ethernet**: If you have devices (you do) which talk via the Internet (you do) or to each other (you do) they're using this protocol to do so, unless you know better.
+
+** VLAN **: Most consumer devices create _one_ network for all devices connected to them. This is fine for consumer devices, but what if you're a weirdo like me who wants to segment his home media devices (Playstation, Laptop) from the servers it using to serve his webpage and mail to the Internet? The Gaelan could use multiple computers, multiple routers, all independant ... or it could use slightly professional hardware which can send effectively multiple networks over the same physical networking channel by "tagging" each network with a different ID as part of the low-level protocol metadata. Assuming the hardware and low-level software isn't defective, the traffic is virtually segmented which is nice from an isolation and maintenance point of view.
+
+** Network Bridge **: Basically what your router does, Allow multiple devices to talk to each other because they're all wired together. Except if you know anything about networking, it doesn't do any of the fancy stuff like firewalling (denying bad traffic into to from or across your system) or routing (dispatching data from your home network to a network somewhere else on the Internet by knowing who the appropriate entrypoint into the other system is). Except it does do some really interesting low-level stuff that's not really relevant. Also in this case it's all via software dealing with software interfaces not physical hardware. When you hear of a networking hub or switch they're basically bridges except you learn some other interesting implementation details with really important ramifications that affect how your devices are bridged in the abstract.
+
+** Tap device **:  I use this here to effectively mean a virtualized network device my virtual machines are using. Inside the guest system they think it's a network card ... the host OS knows that's bullshit. In some technical way a Tap means something more involved and specific but damned if I know what.
+
+** Jail **: If you know Docker, it's a container. Basically instead of emulating a full machine, the OS basically develops a split contained personality that thinks it is an independant instance. It's arguably not as secure as faking an entire machine, but it's also way more performant and way more light-weight. Jails are just FreeBSD's implementation of containers; Solaris has "Zones", for example, with its own set of implementation-specific details.
